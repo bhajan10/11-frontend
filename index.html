@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Hover Hide</title>
+</head>
+<body>
+
+    <h2>Hover over the image</h2>
+
+    <img 
+        id="myImage"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png"
+        width="300"
+        alt="Sample Image"
+    >
+
+    <script>
+        const img = document.getElementById("myImage");
+
+        img.addEventListener("mouseenter", function () {
+            img.style.visibility = "hidden";
+        });
+
+        img.addEventListener("mouseleave", function () {
+            img.style.visibility = "visible";
+        });
+    </script>
+
+</body>
+</html>
